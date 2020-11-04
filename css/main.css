@@ -1,0 +1,166 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --logo-site-nav-color: #2196f3;
+  --white-text-color: #ffffff;
+}
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-style: 400px;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.page-header {
+  background-color: var(--white-text-color);
+}
+.logo {
+  color: var(--logo-site-nav-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent {
+  color: var(--primary-text-color);
+  font-family: Raleway;
+}
+.accent-footer {
+  color: #ffffff;
+}
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.site-nav .link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: 400px;
+  text-decoration: none;
+}
+.link-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #757575;
+}
+.link-address:hover,
+.link-address:focus {
+  color: #2196f3;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+.section-activity {
+  background: #e5e5e5;
+}
+.section-command {
+  background: #f5f4fa;
+}
+.section-title {
+  color: #212121;
+  font-family: Roboto;
+  font-style: 400px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.section-title-list {
+  font-style: 400px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #212121;
+}
+.section-title-list .text {
+  font-style: 400px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+}
+.section-title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #212121;
+}
+.title-text {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #757575;
+}
+.footer {
+  background-color: #2f303a;
+}
+.city {
+  color: #ffffff;
+}
+.citi-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.citi-tel:hover,
+.citi-tel:focus {
+  color: #2196f3;
+}
+
+/* портфолио css*/
+.portfolio-gallery {
+  text-decoration: none;
+}
+.button-portfolio {
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #212121;
+}
+.button-portfolio .link:hover,
+.button-portfolio .link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.portfolio-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+}
+.portfolio-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--title-text-color);
+}

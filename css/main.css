@@ -80,14 +80,32 @@ ul {
   font-size: 16px;
   line-height: 1.2;
 }
-
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   font-style: 400px;
   text-decoration: none;
+}
+.second-nav {
+  display: flex;
+  margin-left: auto;
 }
 .link-address {
   font-weight: 500;
@@ -129,6 +147,7 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
   margin-top: 0%;
   margin-bottom: 10px;
 }

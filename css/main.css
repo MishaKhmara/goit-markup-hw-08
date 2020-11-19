@@ -14,15 +14,20 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.02em;
   font-style: 400px;
+  font-weight: 400px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-right: 215px;
   margin-left: 215px;
-  outline: 2px solid red;
+
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid red;
 }
+
 a {
   list-style: none;
   text-decoration: none;
@@ -30,6 +35,11 @@ a {
 ul {
   list-style: none;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/*================================== Heder===============================*/
 
 .page-header {
   background-color: var(--white-text-color);
@@ -52,34 +62,7 @@ ul {
 .accent-footer {
   color: var(--white-text-color);
 }
-.hero {
-  background-color: var(--title-text-color);
-}
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  color: var(--white-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
-}
-.button {
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
-  text-align: center;
-  margin-right: 700px;
-  margin-left: 700px;
-  color: var(--white-text-color);
-  background-color: var(--logo-site-nav-color);
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.2;
-}
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -124,13 +107,139 @@ ul {
 .site-nav .link.current {
   color: var(--logo-site-nav-color);
 }
+
+/*================================== END Heder ===============================*/
+/*================================== Hero ===============================*/
+.hero {
+  background-color: var(--title-text-color);
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-right: 700px;
+  margin-left: 700px;
+  color: var(--white-text-color);
+  background-color: var(--logo-site-nav-color);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.hero-title {
+  padding-top: 200px;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-transform: uppercase;
+}
+
+/*================================== End Hero ===============================*/
+/*================================== section-proposition ===============================*/
+
+.proposition-title-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-top: 94px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+
+  width: 270px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
+.proposition-title {
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #212121;
+}
+.proposition-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.proposition-list .item {
+  width: 270px;
+  margin-right: 30px;
+}
+.proposition-list .item:nth-child(4) {
+  margin: 0px;
+}
+
+.proposition-text {
+  display: flex;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  padding-bottom: 94px;
+
+  font-style: 400px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*================================== End section-proposition ===============================*/
+/*================================== section-activity ===============================*/
 .section-activity {
   background: #e5e5e5;
 }
 .section-command {
   background: #f5f4fa;
 }
-.section-title {
+.activity-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+}
+.activity-list .item {
+  width: 370px;
+  margin-right: 30px;
+}
+.activity-list .item:nth-child(3) {
+  margin: 0px;
+}
+.activity-title {
+  display: block;
   color: var(--primary-text-color);
   font-family: Roboto;
   font-style: 400px;
@@ -138,10 +247,11 @@ ul {
   line-height: 1.16;
   text-align: center;
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 50px;
   padding-top: 94px;
+  padding-bottom: 0px;
 }
-.section-title-list {
+.activity-title-list {
   font-style: 400px;
   font-size: 14px;
   line-height: 1.14;
@@ -151,7 +261,7 @@ ul {
   margin-top: 0%;
   margin-bottom: 10px;
 }
-.section-title-list .text {
+.activity-title-list .text {
   font-style: 400px;
   font-weight: 400px;
   font-size: 14px;
@@ -160,29 +270,109 @@ ul {
   margin-top: 0%;
   margin-bottom: 10px;
 }
-.text {
-  margin-top: 0%;
-  margin-bottom: 0%;
+/*================================== End section-activity ===============================*/
+/*================================== section-command ===============================*/
+.command-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 94px;
 }
-.section-title-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+
+.command-list .item {
+  margin-right: 30px;
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-list .item:nth-child(4) {
+  margin: 0px;
+}
+.command-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
-.title-text {
-  font-weight: 400px;
+.command-title-name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.command-title-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 1.187;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
   color: var(--title-text-color);
 }
+/*================================== section-command ===============================*/
+/*================================== Footer===============================*/
 .footer {
   background-color: #2f303a;
 }
-.city {
+/* .footer-address {
+  display: flex;
+  flex-direction: column;
+} */
+.logo-footer {
+  display: flex;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  color: var(--logo-site-nav-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent-footer {
   color: var(--white-text-color);
 }
+.city {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  color: var(--white-text-color);
+}
+.citi-mail {
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
 .citi-tel {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   font-size: 14px;
@@ -192,18 +382,28 @@ ul {
 .citi-tel:focus {
   color: var(--logo-site-nav-color);
 }
-
-/* портфолио css*/
+/*================================== End Footer===============================*/
+/*================================== портфолио css===============================*/
 .portfolio-gallery {
   text-decoration: none;
+  display: flex;
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
 }
 .button-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   color: var(--primary-text-color);
+}
+.button-portfolio .item {
 }
 .button-portfolio .link:hover,
 .button-portfolio .link:focus {
@@ -219,6 +419,7 @@ ul {
 .portfolio-text {
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.875;
   color: var(--title-text-color);
 }
+/*================================== end портфолио css===============================*/

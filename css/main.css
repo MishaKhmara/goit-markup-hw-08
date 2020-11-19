@@ -12,6 +12,7 @@
 }
 body {
   font-family: Roboto, sans-serif;
+  font-style: normal;
   letter-spacing: 0.02em;
   font-style: 400px;
   font-weight: 400px;
@@ -28,7 +29,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 a {
@@ -46,6 +47,7 @@ ul {
 
 .page-header {
   background-color: var(--white-text-color);
+  border: 1px solid #ececec;
 }
 .logo {
   color: var(--logo-site-nav-color);
@@ -116,6 +118,8 @@ ul {
 .hero {
   background-color: var(--title-text-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0px;
@@ -135,8 +139,6 @@ ul {
   min-width: 200px;
   height: 50px;
   text-align: center;
-  margin-right: 700px;
-  margin-left: 700px;
   color: var(--white-text-color);
   background-color: var(--logo-site-nav-color);
   font-family: inherit;
@@ -144,32 +146,18 @@ ul {
   line-height: 1.2;
 }
 
-.hero-title {
-  padding-top: 200px;
-
-  margin-top: 0px;
-  margin-bottom: 30px;
-  color: var(--white-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  text-transform: uppercase;
-}
-
 /*================================== End Hero ===============================*/
 /*================================== section-proposition ===============================*/
-
+.section-proposition {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .proposition-title-list {
   display: flex;
   justify-content: space-between;
 
   margin-top: 0px;
   margin-bottom: 10px;
-  padding-top: 94px;
-  /* padding-left: 10px;
-  padding-right: 10px; */
-
   width: 270px;
   font-family: Roboto;
   font-style: normal;
@@ -207,11 +195,6 @@ ul {
 
   margin-top: 0px;
   margin-bottom: 0px;
-
-  /* padding-left: 10px;
-  padding-right: 10px; */
-  padding-bottom: 94px;
-
   font-style: 400px;
   font-weight: 400px;
   font-size: 14px;
@@ -232,7 +215,6 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  padding-bottom: 94px;
 }
 .activity-list .item {
   width: 370px;
@@ -251,7 +233,6 @@ ul {
   text-align: center;
   margin-top: 0%;
   margin-bottom: 50px;
-  padding-top: 94px;
   padding-bottom: 0px;
 }
 .activity-title-list {
@@ -275,13 +256,16 @@ ul {
 }
 /*================================== End section-activity ===============================*/
 /*================================== section-command ===============================*/
+.section-command {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .command-list {
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  padding-bottom: 94px;
 }
 
 .command-list .item {
@@ -299,7 +283,6 @@ ul {
 .command-title {
   margin-top: 0px;
   margin-bottom: 50px;
-  padding-top: 94px;
 
   font-weight: bold;
   font-size: 36px;
@@ -361,6 +344,8 @@ ul {
   margin-top: 0px;
   margin-bottom: 9px;
   color: var(--white-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
 }
 .citi-mail {
   margin-bottom: 9px;
@@ -369,6 +354,7 @@ ul {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+  font-family: Roboto, sans-serif;
 }
 .citi-tel {
   display: flex;
@@ -380,6 +366,7 @@ ul {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+  font-family: Roboto;
 }
 .citi-tel:hover,
 .citi-tel:focus {
@@ -388,7 +375,10 @@ ul {
 /*================================== End Footer===============================*/
 /*================================== портфолио css===============================*/
 .portfolio-gallery {
+  display: flex;
   text-decoration: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio {
   margin: 0px;
@@ -399,7 +389,7 @@ ul {
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  padding-top: 94px;
+
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -418,6 +408,11 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.portfolio-list .item {
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+
 .button-portfolio-list .item + .item {
   margin-left: 8px;
 }
@@ -430,14 +425,15 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0%;
+  margin: 0px;
   padding-left: 0px;
-  padding-bottom: 94px;
 }
 .portfolio-title {
   margin-top: 0px;
   margin-bottom: 2px;
   padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   color: var(--primary-text-color);
   font-weight: bold;
@@ -445,6 +441,8 @@ ul {
   line-height: 2;
 }
 .portfolio-text {
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0px;
   padding-bottom: 20px;
   font-weight: normal;

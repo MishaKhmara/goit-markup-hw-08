@@ -29,7 +29,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 a {
@@ -206,10 +206,9 @@ ul {
 /*================================== section-activity ===============================*/
 .section-activity {
   background: #e5e5e5;
+  padding-bottom: 94px;
 }
-.section-command {
-  background: #f5f4fa;
-}
+
 .activity-list {
   display: flex;
   margin-top: 0px;
@@ -256,9 +255,13 @@ ul {
 }
 /*================================== End section-activity ===============================*/
 /*================================== section-command ===============================*/
+
 .section-command {
   padding-bottom: 94px;
   padding-top: 94px;
+  background: #f5f4fa;
+}
+.command-box {
 }
 .command-list {
   display: flex;
@@ -321,14 +324,18 @@ ul {
 /*================================== Footer===============================*/
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-/* .footer-address {
-  display: flex;
-  flex-direction: column;
-} */
+.footer-address {
+  display: block;
+  font-style: italic;
+  font-family: Roboto;
+  font-style: normal;
+}
 .logo-footer {
   display: flex;
-  padding-top: 60px;
+
   margin-bottom: 20px;
   color: var(--logo-site-nav-color);
   font-family: Raleway;
@@ -356,11 +363,15 @@ ul {
   line-height: 1.7;
   font-family: Roboto, sans-serif;
 }
+.citi-mail:hover,
+.citi-mail:focus {
+  color: var(--logo-site-nav-color);
+}
+
 .citi-tel {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 60px;
 
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -379,6 +390,10 @@ ul {
   text-decoration: none;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.portfolio-box {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 .portfolio {
   margin: 0px;
@@ -409,7 +424,6 @@ ul {
   letter-spacing: 0.03em;
 }
 .portfolio-list .item {
-  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 
@@ -431,20 +445,13 @@ ul {
 .portfolio-title {
   margin-top: 0px;
   margin-bottom: 2px;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-
   color: var(--primary-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
 }
 .portfolio-text {
-  padding-left: 24px;
-  padding-right: 24px;
   margin: 0px;
-  padding-bottom: 20px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.875;

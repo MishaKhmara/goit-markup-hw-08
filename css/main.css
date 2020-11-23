@@ -31,7 +31,7 @@ img {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 a {
@@ -368,14 +368,15 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
 }
+.command-box {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .command-list .item {
   margin-right: 30px;
   background: #ffffff;
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .command-list .item:nth-child(4) {
   margin: 0px;
@@ -679,8 +680,6 @@ ul {
   background-color: #f5f4fa;
   text-align: center;
   letter-spacing: 0.03em;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list .portfolio-item {
@@ -696,6 +695,8 @@ ul {
 .button-portfolio-list :focus {
   color: var(--white-text-color);
   background-color: var(--logo-site-nav-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;

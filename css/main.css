@@ -37,6 +37,7 @@ img {
 a {
   list-style: none;
   text-decoration: none;
+  font-style: normal;
 }
 ul {
   list-style: none;
@@ -46,30 +47,37 @@ ul {
   padding-bottom: 94px;
 }
 /*================================== Heder===============================*/
-.nav-dуcoration-list {
+.list-contacts {
   display: flex;
-  content: "";
   align-items: center;
+  align-self: center;
 }
+.list-contacts:hover,
+.list-contacts:focus {
+  fill: var(--logo-site-nav-color);
+}
+
 .nav-decoration-list-svg {
-  align-items: center;
   fill: #757575;
+
   margin-right: 10px;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
 }
-.nav-decoration-list-svg:hover,
+.site-nav .list-contacts + .list-contacts {
+  margin-left: 50px;
+}
+.link-address:hover .nav-decoration-list-svg,
 .nav-decoration-list-svg:focus {
   fill: var(--logo-site-nav-color);
 }
 
-.nav-decoration-list-link {
+.page-header {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.page-header {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: var(--white-text-color);
   border: 1px solid #ececec;
 }
@@ -104,9 +112,7 @@ ul {
   margin-left: 50px;
 }
 .site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -120,6 +126,8 @@ ul {
   margin-left: auto;
 }
 .link-address {
+  display: flex;
+  align-items: center;
   margin-right: 30px;
   font-weight: 500;
   font-size: 14px;
@@ -422,7 +430,7 @@ ul {
   text-align: center;
   width: 170px;
   height: 90px;
-  /* border: 1px solid #afb1b8; */
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -443,9 +451,15 @@ ul {
 .customers-svg:hover,
 .customers-svg:focus {
   fill: #2196f3;
+  border: #afb1b8;
 }
 .customers-list-link:hover .customers-svg {
   fill: var(--logo-site-nav-color);
+  border-color: var(--logo-site-nav-color);
+}
+.customers-list-link:hover {
+  border-color: var(--logo-site-nav-color);
+  border-radius: 4px;
 }
 .section-customers {
   display: flex;
@@ -580,7 +594,6 @@ ul {
 .footer-address::after {
   display: flex;
   flex-direction: column;
-  font-style: italic;
   font-family: Roboto;
   font-style: normal;
 }
@@ -598,11 +611,8 @@ ul {
   color: var(--white-text-color);
 }
 .city {
-  margin-top: 0px;
   margin-bottom: 9px;
   color: var(--white-text-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
 }
 .citi-mail {
   margin-bottom: 9px;
@@ -721,3 +731,47 @@ ul {
   color: var(--title-text-color);
 }
 /*================================== end портфолио css===============================*/
+/*======================================== BACKDROP css===============================*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0px;
+}
+.svg-vecktor {
+  width: 15px;
+  height: 15px;
+  color: #000;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/*================================== end BACKDROP css===============================*/

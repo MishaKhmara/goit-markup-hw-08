@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./js/modal.js">  
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -24,22 +25,17 @@
     </nav>
     <div class="second-nav">
     <ul class="site-nav list">
-    <li class="nav-decoration-list-item">
-      <a href="#" class="nav-decoration-list-link">
-        <svg class="nav-decoration-list-svg">
-          <use href="./svg.img/sprite.svg#envelope"></use>
-        </svg>
-      </a>
-    </li>
-        <li class="item"><a href="mailto:info@devstudio.com" class="link-address">info@devstudio.com</a></li>
-        <li class="nav-decoration-list-item">
-          <a href="#" class="nav-decoration-list-link">
-            <svg class="nav-decoration-list-svg">
+      <li class="list-contacts">
+        <a class="link-address" href="mailto:info@devstudio.com" >
+          <svg class="nav-decoration-list-svg">
+        <use href="./svg.img/sprite.svg#envelope"></use>
+      </svg>info@devstudio.com</a></li>
+    
+        
+      <li class="item">
+        <a href="tel:+380961111111" class="link-address"><svg class="nav-decoration-list-svg">
               <use href="./svg.img/sprite.svg#smartphone"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="item"><a href="tel:+380961111111" class="link-address">+38 096 111 11 11</a></li>
+            </svg>+38 096 111 11 11</a></li>
     </ul>
     </div>
 </div>
@@ -50,7 +46,7 @@
        <section class="hero">
       
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="submit" class="button">Заказать услугу</button>
+            <button  type="submit"  class="button" data-modal-open>Заказать услугу</button>
    
        </section>
    
@@ -281,7 +277,7 @@
             </a></li>
             <li class="customers-item"><a href="#" class="customers-list-link">
               <svg class="customers-svg">
-                <use href="./svg.img/sprite.svg#logo6" ></use>
+                <use href="./svg.img/sprite.svg#logo6"></use>
               </svg>
             </a></li>
           </ul>
@@ -339,5 +335,16 @@
   </div>
 </div>
    </footer>
+   <!----------------------------------------- BACKDROP ---------------------------->
+   <div class="backdrop is-hidden" data-modal >
+     <div class="modal" >
+        <button  type="button" class="modal-close-btn" data-modal-close> 
+          <svg class="svg-vecktor">
+          <use e href="./svg.img/sprite.svg#Vector"></use>
+        </svg>
+        </button>
+     </div>
+   </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

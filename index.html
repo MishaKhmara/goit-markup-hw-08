@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./js/modal.js">  
+    <title>Document</title> 
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
@@ -53,7 +52,7 @@
        <section class="section-proposition" >
            <!--заголовок (что мы предлагаем) будет скрытый -->
             <div class="container">
-           <h2 class="proposition-title">Что мы предлагаем</h2>
+           <h2 class="visually-hidden">Что мы предлагаем</h2>
            <ul class="proposition-list">
                <li class="proposition-item proposition-item-antenna">
                    <h3 class="proposition-title-list">Внимание к деталям</h3>
@@ -79,9 +78,21 @@
            <!--сфера деятельности -->
          <h2 class="activity-title list">Чем мы занимаемся</h2>
          <ul class="activity-list">
-           <li class="item"><img src="./img/img.png" alt="фото" width="370" height="294"/></li>
-           <li class="item"><img src="./img/img1.png" alt="фото" width="370" height="294"/></li>
-           <li class="item"><img src="./img/img2.png" alt="фото" width="370" height="294"/></li>
+           <li class="item"><img src="./img/img.png" alt="фото" width="370" height="294"/>
+                <div class="activity-list-conteiner">
+                 <p class="activity-list-text">Десктопные приложения</p>
+                </div>
+            </li>
+             <li class="item"><img src="./img/img1.png" alt="фото" width="370" height="294"/>
+              <div class="activity-list-conteiner">
+                <p class="activity-list-text">Мобильные приложения</p>
+              </div>
+            </li>
+           <li class="item"><img src="./img/img2.png" alt="фото" width="370" height="294"/>
+            <div class="activity-list-conteiner">
+              <p class="activity-list-text">Дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
         </div>
        </section>
@@ -90,7 +101,6 @@
            <!--команда-->
            <h2 class="command-title list">Наша команда</h2>
         <ul class="command-list"> 
-          <div class="command-box-border">
         <li class="item">
          <img src="img/img.jpg" alt="фото" width="270" height="260"/>
          <div class="command-box">
@@ -123,7 +133,6 @@
             </li>
           </ul>
          </div>
-        </div>
        </li>
         <li class="item">
           <img src="img/img(1).jpg" alt="фото" width="270" height="260"/>
@@ -156,11 +165,8 @@
               <a href="#" class="social-list-link">
                 <svg class="social-list-svg">
                   <use href="./svg.img/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
+                </svg></a>
             </li>
-          
-          
           </ul>
          </div>
         </li>
@@ -195,13 +201,9 @@
                 <a href="#" class="social-list-link">
                   <svg class="social-list-svg">
                     <use href="./svg.img/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
+                  </svg></a>
               </li>
-            
-            
-            </ul>
-         </div>
+            </ul></div>
         </li>
         
         <li class="item">
@@ -235,12 +237,8 @@
                 <a href="#" class="social-list-link">
                   <svg class="social-list-svg">
                     <use href="./svg.img/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            
-            
-            </ul>
+                  </svg> </a> </li>
+             </ul>
          </div>
         </li>
         </ul>
@@ -251,7 +249,7 @@
           <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list">
             <li class="customers-item"><a href="#" class="customers-list-link">
-              <svg class="customers-svg" > 
+              <svg class="customers-svg"> 
                 <use href="./svg.img/sprite.svg#logo1"></use>
               </svg>
             </a></li>
@@ -335,12 +333,12 @@
   </div>
 </div>
    </footer>
-   <!----------------------------------------- BACKDROP ---------------------------->
+   <!--BACKDROP -->
    <div class="backdrop is-hidden" data-modal >
      <div class="modal" >
         <button  type="button" class="modal-close-btn" data-modal-close> 
           <svg class="svg-vecktor">
-          <use e href="./svg.img/sprite.svg#Vector"></use>
+          <use href="./svg.img/sprite.svg#Vector"></use>
         </svg>
         </button>
      </div>

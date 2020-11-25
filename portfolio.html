@@ -26,22 +26,17 @@
             </nav>
             <div class="second-nav">
                 <ul class="site-nav list">
-                    <li class="nav-decoration-list-item">
-                        <a href="#" class="nav-decoration-list-link">
+                    <li class="list-contacts">
+                        <a class="link-address" href="mailto:info@devstudio.com">
                             <svg class="nav-decoration-list-svg">
                                 <use href="./svg.img/sprite.svg#envelope"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link-address">info@devstudio.com</a></li>
-                    <li class="nav-decoration-list-item">
-                        <a href="#" class="nav-decoration-list-link">
-                            <svg class="nav-decoration-list-svg">
+                            </svg>info@devstudio.com</a></li>
+    
+    
+                    <li class="item">
+                        <a href="tel:+380961111111" class="link-address"><svg class="nav-decoration-list-svg">
                                 <use href="./svg.img/sprite.svg#smartphone"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item"><a href="tel:+380961111111" class="link-address">+38 096 111 11 11</a></li>
+                            </svg>+38 096 111 11 11</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +47,7 @@
     <section class="portfolio-gallery">
             <div class="container">
             <!--заголовок (портфолио) будет скрыт -->
-            <h1 class="portfolio">портфолио</h1>
+            <h1 class="visually-hidden">портфолио</h1>
           <ul class="button-portfolio-list">
             <li class="item"><button type="submit" class="button-portfolio">Все</button></li>
             <li class="item"><button type="submit" class="button-portfolio">Веб-сайты</button></li>
@@ -63,13 +58,20 @@
             <ul class="portfolio-list">
                 <a href="">
                 <li class="portfolio-item">
+                    <div class="portfolio-thumb">
                     <img src="./img.portfolio/portfolio1.png" alt="фото" width="370" height="294"/>
+                  <p class="portfolio-overlay">
+                    Технокряк это современная площадка распространения коронавируса. 
+                    Компании используют эту платформу для цифрового
+                    шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
                     <div class="portfolio-box">
                     <h2 class="portfolio-title">Технокряк</h2>
                     <p class="portfolio-text">Веб-сайт</p>
-                    </div>
-                </li>
-                </a>
+                
+                </li></a>
+                
                 <a href="">
                 <li class="portfolio-item">
                      <img src="./img.portfolio/portfolio2.png" alt="фото" width="370" height="294"/>

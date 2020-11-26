@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.02em;
+  font-style: 400px;
+  font-weight: 400px;
+}
+
+img {
+  display: block;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

@@ -1,0 +1,16 @@
+//base
+@import "./base/common";
+@import "./base/container";
+//utils
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+//layout
+@import "./layout/heder";
+@import "./layout/hero";
+@import "./layout/section-proposition";
+@import "./layout/section-activity";
+@import "./layout/section-command";
+@import "./layout/section-customers";
+@import "./layout/footer";
+@import "./layout/backdrop";
+@import "./layout/modal-form";

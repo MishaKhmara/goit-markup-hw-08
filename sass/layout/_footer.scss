@@ -1,0 +1,219 @@
+.footer-social-list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.box-container {
+  display: flex;
+}
+
+.footer .container {
+  display: flex;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+.social-icon {
+  margin-left: 70px;
+
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.join {
+  margin-bottom: 20px;
+  display: flex;
+  align-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-social-list {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+
+  content: "";
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.footer-social-list-svg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: #ffffff;
+
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--logo-site-nav-color);
+}
+.footer-social-list-link:hover .social-list-svg,
+.footer-social-list-link:focus .social-list-svg {
+  fill: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address::after {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+}
+.logo-footer {
+  display: flex;
+
+  margin-bottom: 20px;
+  color: var(--logo-site-nav-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.accent-footer {
+  color: var(--white-text-color);
+}
+.city {
+  margin-bottom: 9px;
+  color: var(--white-text-color);
+}
+.citi-mail {
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: Roboto, sans-serif;
+}
+.citi-mail:hover,
+.citi-mail:focus {
+  color: var(--logo-site-nav-color);
+}
+
+.citi-tel {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: Roboto;
+}
+.citi-tel:hover,
+.citi-tel:focus {
+  color: var(--logo-site-nav-color);
+}
+.footer-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 570px;
+  height: 86px;
+}
+.footer-form-title {
+  margin-bottom: 20px;
+  width: 219px;
+  height: 16px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-form-mail {
+  outline: none;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background: #2f303a;
+  margin-right: 12px;
+  padding-left: 20px;
+}
+.footer-form-svg {
+  position: absolute;
+  left: 92%;
+  bottom: 15%;
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+  border-radius: 0px;
+}
+
+.footer-form-button {
+  position: relative;
+  text-align: start;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  padding-left: 29px;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-form-input {
+  display: flex;
+  flex-direction: row;
+}
+.footer-form-mail::placeholder {
+  width: 47px;
+  height: 20px;
+  padding-left: 6px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}

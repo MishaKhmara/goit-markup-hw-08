@@ -1,0 +1,119 @@
+.list-contacts {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.list-contacts:hover,
+.list-contacts:focus {
+  fill: var(--logo-site-nav-color);
+}
+
+.nav-decoration-list-svg {
+  fill: #757575;
+
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+.site-nav .list-contacts + .list-contacts {
+  margin-left: 50px;
+}
+.link-address:hover .nav-decoration-list-svg,
+.nav-decoration-list-svg:focus {
+  fill: var(--logo-site-nav-color);
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: var(--white-text-color);
+  border: 1px solid #ececec;
+}
+.logo {
+  color: var(--logo-site-nav-color);
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+.accent {
+  color: var(--primary-text-color);
+  font-family: Raleway;
+}
+.accent-footer {
+  color: var(--white-text-color);
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: flex;
+  position: relative;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  font-style: 400px;
+  text-decoration: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 0;
+  bottom: -210%;
+  opacity: 1;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .current::after {
+  opacity: 1;
+  color: var(--logo-site-nav-color);
+}
+
+.second-nav {
+  display: flex;
+  margin-left: auto;
+}
+.link-address {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-address:hover,
+.link-address:focus {
+  color: var(--logo-site-nav-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--logo-site-nav-color);
+}
+.site-nav .link.current {
+  color: var(--logo-site-nav-color);
+}

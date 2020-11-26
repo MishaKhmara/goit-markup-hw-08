@@ -46,9 +46,7 @@
   margin-bottom: 0px;
   padding-left: 0px;
   list-style: none;
-
   content: "";
-  /* justify-content: space-between; */
   align-items: center;
 }
 .footer-social-list-svg {
@@ -70,11 +68,13 @@
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--logo-site-nav-color);
+  }
 }
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-  background-color: var(--logo-site-nav-color);
-}
+
 .footer-social-list-link:hover .social-list-svg,
 .footer-social-list-link:focus .social-list-svg {
   fill: #ffffff;
@@ -124,10 +124,12 @@
   font-size: 14px;
   line-height: 1.7;
   font-family: Roboto, sans-serif;
-}
-.citi-mail:hover,
-.citi-mail:focus {
-  color: var(--logo-site-nav-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-site-nav-color);
+  }
 }
 
 .citi-tel {
@@ -143,11 +145,14 @@
   font-size: 14px;
   line-height: 1.7;
   font-family: Roboto;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-site-nav-color);
+  }
 }
-.citi-tel:hover,
-.citi-tel:focus {
-  color: var(--logo-site-nav-color);
-}
+
 .footer-form {
   position: relative;
   display: flex;
@@ -155,6 +160,19 @@
   margin-left: 50px;
   width: 570px;
   height: 86px;
+
+  &-title {
+    margin-bottom: 20px;
+    width: 219px;
+    height: 16px;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 .footer-form-title {
   margin-bottom: 20px;

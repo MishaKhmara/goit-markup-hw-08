@@ -11,16 +11,17 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  color: var(--white-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  text-transform: uppercase;
+
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .button {

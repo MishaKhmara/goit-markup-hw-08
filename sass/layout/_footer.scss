@@ -84,8 +84,8 @@
   display: flex;
   justify-content: center;
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 .footer-address::after {
   display: flex;
@@ -107,11 +107,17 @@
   color: var(--white-text-color);
 }
 .city {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
   margin-bottom: 9px;
   color: var(--white-text-color);
 }
 .citi-mail {
-  margin-bottom: 9px;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 20px;
 
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -125,6 +131,9 @@
 }
 
 .citi-tel {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;

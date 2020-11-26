@@ -283,8 +283,8 @@ ul {
   display: flex;
   justify-content: center;
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .footer-address::after {
@@ -309,12 +309,18 @@ ul {
 }
 
 .city {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
   margin-bottom: 9px;
   color: var(--white-text-color);
 }
 
 .citi-mail {
-  margin-bottom: 9px;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   font-size: 14px;
@@ -328,6 +334,9 @@ ul {
 }
 
 .citi-tel {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -452,8 +461,7 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-item:hover, .portfolio-item-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

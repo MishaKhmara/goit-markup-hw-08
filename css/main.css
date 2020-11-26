@@ -236,7 +236,7 @@ ul {
   width: 270px;
 }
 
-.proposition-item ::before {
+.proposition-item::before {
   display: flex;
   margin-bottom: 30px;
   background: #f5f4fa;

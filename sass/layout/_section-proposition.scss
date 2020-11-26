@@ -1,7 +1,7 @@
 .proposition-item {
   width: 270px;
-
-  ::before {
+}
+.proposition-item::before {
   display: flex;
   margin-bottom: 30px;
   background: #f5f4fa;
@@ -15,8 +15,6 @@
   background-size: 70px 70px;
   background-position: center;
 }
-}
-
 .proposition-item-antenna::before {
   background-image: url("../svg.img/antenna.svg");
 }

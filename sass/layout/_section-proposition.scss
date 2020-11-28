@@ -1,13 +1,24 @@
-.proposition-item {
-  width: 270px;
+.section-proposition {
+  background-color: var(--white-text-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
+
+.proposition-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
 .proposition-item::before {
-  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  width: 100%;
+  width: 450px;
   display: block;
   content: "";
 
@@ -15,6 +26,82 @@
   background-size: 70px 70px;
   background-position: center;
 }
+.proposition-title-list {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  width: 450px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.proposition-text {
+  width: 450px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-style: 400px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (min-width: 480px) {
+  .proposition-title-list {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .proposition-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .proposition-item::before {
+    width: 354px;
+  }
+  .proposition-title-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 354px;
+  }
+  .proposition-text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-proposition {
+    background-color: var(--white-text-color);
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  .proposition-item::before {
+    width: 270px;
+  }
+
+  .proposition-title-list {
+    width: 270px;
+  }
+  .proposition-item::before {
+    width: 270px;
+  }
+
+  .proposition-text {
+    width: 270px;
+    margin-bottom: 0%;
+  }
+}
+
 .proposition-item-antenna::before {
   background-image: url("../svg.img/antenna.svg");
 }
@@ -26,55 +113,4 @@
 }
 .proposition-item-astronaut::before {
   background-image: url("../svg.img/astronaut.svg");
-}
-.section-proposition {
-  background-color: var(--white-text-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-.proposition-title-list {
-  display: flex;
-  justify-content: space-between;
-
-  margin-top: 0px;
-  margin-bottom: 10px;
-  width: 270px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--primary-text-color);
-}
-
-.proposition-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  list-style: none;
-}
-.proposition-list .item {
-  width: 270px;
-  margin-right: 30px;
-}
-.proposition-list .item:nth-child(4) {
-  margin: 0px;
-}
-
-.proposition-text {
-  display: flex;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-style: 400px;
-  font-weight: 400px;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
 }

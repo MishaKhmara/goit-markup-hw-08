@@ -1,6 +1,7 @@
 .section-activity {
   background: #ffffff;
   padding-bottom: 94px;
+  display: none;
 }
 
 .activity-list {
@@ -72,4 +73,10 @@
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-activity {
+    display: block;
+  }
 }

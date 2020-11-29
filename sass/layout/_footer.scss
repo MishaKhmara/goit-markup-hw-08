@@ -1,32 +1,38 @@
 .footer-social-list-item {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   justify-content: space-between;
   margin-right: 10px;
 }
 
 .box-container {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.footer .container {
+.container .footer {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .container-footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .social-icon {
-  margin-left: 70px;
+  // margin-left: 70px;
 
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .join {
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
   align-content: center;
   font-family: Roboto;
   font-style: normal;
@@ -40,10 +46,11 @@
 }
 .footer-social-list {
   display: flex;
+  justify-content: center;
 
-  justify-content: space-between;
+  // justify-content: space-between;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 60px;
   padding-left: 0px;
   list-style: none;
   content: "";
@@ -51,7 +58,7 @@
 }
 .footer-social-list-svg {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   fill: #ffffff;
 
@@ -82,20 +89,27 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #2f303a;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-address {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .footer-address::after {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   font-family: Roboto;
   font-style: normal;
 }
 .logo-footer {
   display: flex;
-
+  justify-content: center;
   margin-bottom: 20px;
   color: var(--logo-site-nav-color);
   font-family: Raleway;
@@ -104,9 +118,12 @@
   text-decoration: none;
 }
 .accent-footer {
+  justify-content: center;
   color: var(--white-text-color);
 }
 .city {
+  display: flex;
+  justify-content: center;
   list-style: none;
   text-decoration: none;
   font-style: normal;
@@ -114,10 +131,12 @@
   color: var(--white-text-color);
 }
 .citi-mail {
+  display: flex;
+  justify-content: center;
   list-style: none;
   text-decoration: none;
   font-style: normal;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -133,12 +152,14 @@
 }
 
 .citi-tel {
+  justify-content: center;
   list-style: none;
   text-decoration: none;
   font-style: normal;
   display: flex;
+  justify-content: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 60px;
   padding: 0px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -156,16 +177,17 @@
 .footer-form {
   position: relative;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 50px;
-  width: 570px;
-  height: 86px;
+  // margin-left: 50px;
+  // width: 570px;
+  // height: 86px;
 
   &-title {
-    margin-bottom: 20px;
-    width: 219px;
-    height: 16px;
+    display: flex;
+    justify-content: center;
 
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.142;
@@ -174,21 +196,12 @@
     color: #ffffff;
   }
 }
-.footer-form-title {
-  margin-bottom: 20px;
-  width: 219px;
-  height: 16px;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
 .footer-form-mail {
+  display: flex;
+  justify-content: center;
   outline: none;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
 
@@ -198,21 +211,29 @@
   border-radius: 4px;
 
   background: #2f303a;
+  margin-bottom: 20px;
   margin-right: 12px;
   padding-left: 20px;
 }
 .footer-form-svg {
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
   position: absolute;
-  left: 92%;
-  bottom: 15%;
+  left: 62%;
+  bottom: 11%;
   height: 24px;
   width: 24px;
   fill: #ffffff;
   border-radius: 0px;
 }
+.footer-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
 .footer-form-button {
-  position: relative;
   text-align: start;
   font-weight: bold;
   font-size: 16px;
@@ -230,8 +251,19 @@
 }
 .footer-form-input {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
 }
+// .footer-subscribe {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
+// .footer-form-mail {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
 .footer-form-mail::placeholder {
   width: 47px;
   height: 20px;

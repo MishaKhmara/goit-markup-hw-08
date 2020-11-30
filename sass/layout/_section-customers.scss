@@ -109,7 +109,7 @@
   }
   .customers-list-link {
     height: 90px;
-    width: 170px;
+    max-width: 170px;
   }
   .customers-title {
     font-size: 36px;
@@ -118,6 +118,6 @@
   .customers-item {
     margin-bottom: 0%;
     height: 90px;
-    width: 170px;
+    max-width: 170px;
   }
 }

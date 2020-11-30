@@ -2,19 +2,14 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
   margin-right: 10px;
 }
 
 .box-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 .container .footer {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 .container-footer {
   display: flex;
@@ -22,8 +17,6 @@
   justify-content: center;
 }
 .social-icon {
-  // margin-left: 70px;
-
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: center;
@@ -34,8 +27,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
@@ -47,8 +38,6 @@
 .footer-social-list {
   display: flex;
   justify-content: center;
-
-  // justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 60px;
   padding-left: 0px;
@@ -58,10 +47,8 @@
 }
 .footer-social-list-svg {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   fill: #ffffff;
-
   width: 20px;
   height: 20px;
 }
@@ -86,25 +73,23 @@
 .footer-social-list-link:focus .social-list-svg {
   fill: #ffffff;
 }
-
-.footer {
+.mein-footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+}
+.footer {
   background-color: #2f303a;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.footer-address {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+// .footer-address {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+// }
 .footer-address::after {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  font-family: Roboto;
   font-style: normal;
 }
 .logo-footer {
@@ -152,7 +137,6 @@
 }
 
 .citi-tel {
-  justify-content: center;
   list-style: none;
   text-decoration: none;
   font-style: normal;
@@ -175,13 +159,9 @@
 }
 
 .footer-form {
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // margin-left: 50px;
-  // width: 570px;
-  // height: 86px;
 
   &-title {
     display: flex;
@@ -198,8 +178,6 @@
 }
 
 .footer-form-mail {
-  display: flex;
-  justify-content: center;
   outline: none;
   width: 450px;
   height: 50px;
@@ -212,28 +190,20 @@
 
   background: #2f303a;
   margin-bottom: 20px;
-  margin-right: 12px;
   padding-left: 20px;
 }
 .footer-form-svg {
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
   position: absolute;
-  left: 62%;
-  bottom: 11%;
+  left: 78%;
+  bottom: 30%;
   height: 24px;
   width: 24px;
   fill: #ffffff;
   border-radius: 0px;
 }
-.footer-button {
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
 
 .footer-form-button {
+  position: relative;
   text-align: start;
   font-weight: bold;
   font-size: 16px;
@@ -252,18 +222,13 @@
 .footer-form-input {
   display: flex;
   justify-content: center;
+  width: 450px;
   flex-direction: column;
 }
-// .footer-subscribe {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
-// .footer-form-mail {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-// }
+.footer-subscribe {
+  justify-content: center;
+}
+
 .footer-form-mail::placeholder {
   width: 47px;
   height: 20px;
@@ -276,3 +241,150 @@
 
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+  // .footer-subscribe {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+  .footer-social-list-item {
+    justify-content: start;
+    flex-direction: row;
+  }
+  .container-footer {
+    justify-content: start;
+  }
+  .social-icon {
+    margin-left: 70px;
+  }
+  .join {
+    justify-content: start;
+  }
+  .footer-social-list {
+    justify-content: start;
+  }
+  .footer-social-list {
+    margin-bottom: 0%;
+  }
+  .footer-social-list-svg {
+    justify-content: space-between;
+  }
+  .footer {
+    justify-content: start;
+    flex-direction: row;
+  }
+  .logo-footer {
+    justify-content: start;
+  }
+  .accent-footer {
+    justify-content: start;
+  }
+  .city {
+    display: block;
+  }
+  .citi-mail {
+    display: block;
+  }
+  .citi-tel {
+    margin-bottom: 0;
+    justify-content: start;
+  }
+  .footer-form {
+    justify-content: start;
+    margin-left: 50px;
+    // width: 450px;
+    // height: 86px;
+  }
+
+  .footer-form-mail {
+    width: 450px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+  .footer-form-svg {
+    left: 0%;
+    bottom: 0%;
+  }
+  .footer-form-input {
+    flex-direction: column;
+  }
+  .footer-subscribe {
+    width: 450px;
+    justify-content: stretch;
+  }
+  .footer-form-title {
+    justify-content: start;
+  }
+}
+
+// @media screen and (min-width: 1200px) {
+//   .footer-social-list-item {
+//     justify-content: start;
+//     flex-direction: row;
+//   }
+//   .container-footer {
+//     justify-content: start;
+//   }
+//   .social-icon {
+//     margin-left: 70px;
+//   }
+//   .join {
+//     justify-content: start;
+//   }
+//   .footer-social-list {
+//     justify-content: start;
+//   }
+//   .footer-social-list {
+//     margin-bottom: 0%;
+//   }
+//   .footer-social-list-svg {
+//     justify-content: space-between;
+//   }
+//   .footer {
+//     justify-content: start;
+//     flex-direction: row;
+//   }
+//   .logo-footer {
+//     justify-content: start;
+//   }
+//   .accent-footer {
+//     justify-content: start;
+//   }
+//   .city {
+//     display: block;
+//   }
+//   .citi-mail {
+//     display: block;
+//   }
+//   .citi-tel {
+//     margin-bottom: 0;
+//     justify-content: start;
+//   }
+//   .footer-form {
+//     justify-content: start;
+//     margin-left: 50px;
+//     width: 570px;
+//     height: 86px;
+//   }
+
+//   .footer-form-mail {
+//     width: 358px;
+//     margin-bottom: 0;
+//     margin-right: 12px;
+//   }
+//   .footer-form-svg {
+//     left: 89%;
+//     bottom: 15%;
+//   }
+//   .footer-form-input {
+//     flex-direction: row;
+//   }
+//   .footer-subscribe {
+//     width: 570px;
+//     justify-content: stretch;
+//   }
+//   .footer-form-title {
+//     justify-content: start;
+//   }
+// }

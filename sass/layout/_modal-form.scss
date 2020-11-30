@@ -83,7 +83,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
@@ -137,4 +137,10 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-policy-label {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }

@@ -18,7 +18,7 @@
   background: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  width: 450px;
+  max-width: 450px;
   display: block;
   content: "";
 
@@ -29,7 +29,7 @@
 .proposition-title-list {
   margin-top: 0px;
   margin-bottom: 10px;
-  width: 450px;
+  max-width: 450px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -41,7 +41,7 @@
   color: var(--primary-text-color);
 }
 .proposition-text {
-  width: 450px;
+  max-width: 450px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-style: 400px;
@@ -65,16 +65,16 @@
   }
 
   .proposition-item::before {
-    width: 354px;
+    max-width: 354px;
   }
   .proposition-title-list {
     display: flex;
     justify-content: space-between;
 
-    width: 354px;
+    max-width: 354px;
   }
   .proposition-text {
-    width: 354px;
+    max-width: 354px;
   }
 }
 
@@ -86,18 +86,18 @@
   }
 
   .proposition-item::before {
-    width: 270px;
+    max-width: 270px;
   }
 
   .proposition-title-list {
-    width: 270px;
+    max-width: 270px;
   }
   .proposition-item::before {
-    width: 270px;
+    max-width: 270px;
   }
 
   .proposition-text {
-    width: 270px;
+    max-width: 270px;
     margin-bottom: 0%;
   }
 }

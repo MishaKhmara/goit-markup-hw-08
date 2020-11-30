@@ -5,17 +5,17 @@
   margin-right: 10px;
 }
 
-.box-container {
-  display: flex;
-}
-.container .footer {
-  display: flex;
-}
-.container-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .box-container {
+//   display: flex;
+// }
+// .container .footer {
+//   display: flex;
+// }
+// .container-footer {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 .social-icon {
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -178,8 +178,10 @@
 }
 
 .footer-form-mail {
+  display: flex;
+  justify-content: center;
   outline: none;
-  width: 450px;
+
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
 
@@ -203,6 +205,7 @@
 }
 
 .footer-form-button {
+  margin: 0 auto;
   position: relative;
   text-align: start;
   font-weight: bold;
@@ -222,12 +225,13 @@
 .footer-form-input {
   display: flex;
   justify-content: center;
-  width: 450px;
+
   flex-direction: column;
 }
-.footer-subscribe {
-  justify-content: center;
-}
+// .footer-subscribe {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .footer-form-mail::placeholder {
   width: 47px;
@@ -244,79 +248,96 @@
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 768px) {
-  // .footer-subscribe {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-  .footer-social-list-item {
-    justify-content: start;
-    flex-direction: row;
+  .footer {
+    padding: 40px 50px;
   }
   .container-footer {
-    justify-content: start;
+    float: left;
   }
   .social-icon {
-    margin-left: 70px;
-  }
-  .join {
-    justify-content: start;
-  }
-  .footer-social-list {
-    justify-content: start;
-  }
-  .footer-social-list {
-    margin-bottom: 0%;
-  }
-  .footer-social-list-svg {
-    justify-content: space-between;
-  }
-  .footer {
-    justify-content: start;
-    flex-direction: row;
-  }
-  .logo-footer {
-    justify-content: start;
-  }
-  .accent-footer {
-    justify-content: start;
-  }
-  .city {
-    display: block;
-  }
-  .citi-mail {
-    display: block;
-  }
-  .citi-tel {
-    margin-bottom: 0;
-    justify-content: start;
-  }
-  .footer-form {
-    justify-content: start;
-    margin-left: 50px;
-    // width: 450px;
-    // height: 86px;
-  }
-
-  .footer-form-mail {
-    width: 450px;
-    margin-bottom: 0;
-    margin-right: 12px;
-  }
-  .footer-form-svg {
-    left: 0%;
-    bottom: 0%;
-  }
-  .footer-form-input {
-    flex-direction: column;
+    float: right;
   }
   .footer-subscribe {
-    width: 450px;
-    justify-content: stretch;
+    clear: both;
   }
-  .footer-form-title {
-    justify-content: start;
+  .footer-form-mail {
+    margin: 0 auto 20px;
+    width: 300px;
   }
 }
+//   // .footer-subscribe {
+//   //   display: flex;
+//   //   flex-wrap: wrap;
+//   // }
+//   .footer-social-list-item {
+//     justify-content: start;
+//     flex-direction: row;
+//   }
+//   .container-footer {
+//     justify-content: start;
+//   }
+//   .social-icon {
+//     margin-left: 70px;
+//   }
+//   .join {
+//     justify-content: start;
+//   }
+//   .footer-social-list {
+//     justify-content: start;
+//   }
+//   .footer-social-list {
+//     margin-bottom: 0%;
+//   }
+//   .footer-social-list-svg {
+//     justify-content: space-between;
+//   }
+//   .footer {
+//     justify-content: start;
+//     flex-direction: row;
+//   }
+//   .logo-footer {
+//     justify-content: start;
+//   }
+//   .accent-footer {
+//     justify-content: start;
+//   }
+//   .city {
+//     display: block;
+//   }
+//   .citi-mail {
+//     display: block;
+//   }
+//   .citi-tel {
+//     margin-bottom: 0;
+//     justify-content: start;
+//   }
+//   .footer-form {
+//     justify-content: start;
+//     margin-left: 50px;
+//     // width: 450px;
+//     // height: 86px;
+//   }
+
+//   .footer-form-mail {
+//     width: 450px;
+//     margin-bottom: 0;
+//     margin-right: 12px;
+//   }
+//   .footer-form-svg {
+//     left: 0%;
+//     bottom: 0%;
+//   }
+//   .footer-form-input {
+//     flex-direction: column;
+//   }
+//   .footer-subscribe {
+//     width: 450px;
+//     justify-content: stretch;
+//   }
+//   .footer-form-title {
+//     justify-content: start;
+//   }
+// }
 
 // @media screen and (min-width: 1200px) {
 //   .footer-social-list-item {

@@ -15,14 +15,50 @@
   Web<span class="accent">Studio</span>
 </a>
 <div class="container main-nav">
-     
-      <button class="header-menu-icon is-open" data-menu-button aria-expanded="true">
+
+        <!-- <a href="#" class="menuBtn">
+          <span class="lines"></span>
+        </a>
+        <nav class="mainMenu">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Портфолио</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <div><a class="link-address" href="mailto:info@devstudio.com">
+                <svg class="nav-decoration-list-svg">
+                  <use href="./svg.img/sprite.svg#envelope"></use>
+                </svg>info@devstudio.com</a></div>
+                <div><a href="tel:+380961111111" class="link-address"><svg class="nav-decoration-list-svg">
+                    <use href="./svg.img/sprite.svg#smartphone"></use>
+                  </svg>+38 096 111 11 11</a></div>
+            </li>
+          </ul>
+        </nav> -->
+
+
+       <button type="button"
+              class="button-header is-open" 
+              data-menu-button 
+              aria-expanded="true"
+              aria-controls="menu-nav-container"
+              >
+              
 
          <svg width="40" height="40" aria-label="переключатель мобильного меню">
             <use class="icon-close" href="./svg.img/sprite.svg#close"></use>
             <use class="icon-menu" href="./svg.img/sprite.svg#menu"></use>
-         </svg>
+         </svg> 
        </button>
+       <div class="menu-nav-container" id="menu-nav-container" data-menu="">
+          меню
+       </div>
       <nav class="main-nav">
       <ul class="site-nav list">
         <li class="item"><a href="./index.html" class="link current ">Студия</a></li>
@@ -118,7 +154,7 @@
             <source srcset="./desk.comand.img/desktop1.jpg 1x, ./desk.comand.img/desktop1@2x.jpg 2x" media="(min-width:1200px)">
                 <source srcset="./tab.comand.img/tablet1.jpg 1x, ./tab.comand.img/tablet1@2x.jpg 2x" media="(min-width:768px)">
                 <source srcset="./mob.comand.img/mobail1.jpg 1x, ./mob.comand.img/mobail1@2x.jpg 2x" media="(min-width:320px)"> 
-             <img  class="picture" src="img/img.jpg"  alt="фото" /> 
+             <img  class="picture" src="img/img.jpg"  alt="фото"  width="100%"/> 
           </picture>
         
          <div class="command-box">
@@ -157,7 +193,7 @@
             <source srcset="./desk.comand.img/desktop2.jpg 1x, ./desk.comand.img/desktop2@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./tab.comand.img/tablet2.jpg 1x, ./tab.comand.img/tablet2@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./mob.comand.img/mobail2.jpg 1x, ./mob.comand.img/mobail2@2x.jpg 2x" media="(min-width:320px)">
-             <img src="img/img(1).jpg" alt="фото" />
+             <img src="img/img(1).jpg" alt="фото" width="100%" />
           </picture>
          
          <div class="command-box">
@@ -199,7 +235,7 @@
             <source srcset="./desk.comand.img/desktop3.jpg 1x, ./desk.comand.img/desktop3@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./tab.comand.img/tablet3.jpg 1x, ./tab.comand.img/tablet3@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./mob.comand.img/mobail3.jpg 1x, ./mob.comand.img/mobail3@2x.jpg 2x" media="(min-width:320px)">
-              <img src="img/img(2).jpg" alt="фото" />
+              <img src="img/img(2).jpg" alt="фото" width="100%" />
           </picture>
            
          <div class="command-box">
@@ -242,7 +278,7 @@
             <source  srcset="./desk.comand.img/desktop4.jpg 1x, ./desk.comand.img/desktop4@2x.jpg 2x" media="(min-width:1200px)">
             <source srcset="./tab.comand.img/tablet4.jpg 1x, ./tab.comand.img/tablet4@2x.jpg 2x" media="(min-width:768px)">
             <source srcset="./mob.comand.img/mobail4.jpg 1x, ./mob.comand.img/mobail4@2x.jpg 2x" media="(min-width:320px)">
-            <img src="img/img(3).jpg" alt="фото" />
+            <img src="img/img(3).jpg" alt="фото" width="100%" />
           </picture>
           </div>
          <div class="command-box">
@@ -437,7 +473,7 @@
     </div>
      
     <script src="./js/menu.js"></script>
-  <script src="./js/modal.js"></script>
+  <script src="./js/modal.js"></script> 
 </body>
 </html>
 

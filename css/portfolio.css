@@ -121,6 +121,10 @@ ul {
   fill: #2196f3;
 }
 
+.menu-nav-container.is-open {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .menu-nav-container {
     padding: 60px 0;
@@ -166,10 +170,6 @@ ul {
   .menu-nav-container .site-nav .link {
     margin: 0 auto;
   }
-}
-
-.menu-nav-container .menu-nav-container.is-open {
-  display: block;
 }
 
 @media screen and (min-width: 767px) {

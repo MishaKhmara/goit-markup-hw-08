@@ -34,6 +34,9 @@
 .icon-menu:focus {
   fill: #2196f3;
 }
+.menu-nav-container.is-open {
+  display: block;
+}
 
 .menu-nav-container {
   @media screen and (max-width: 767px) {
@@ -80,10 +83,6 @@
     .site-nav .link {
       margin: 0 auto;
     }
-  }
-
-  .menu-nav-container.is-open {
-    display: block;
   }
 }
 

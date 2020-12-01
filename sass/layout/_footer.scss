@@ -262,150 +262,32 @@
   }
   .footer-form-mail {
     margin: 0 auto 20px;
-    width: 300px;
+    width: 450px;
   }
 }
-//   // .footer-subscribe {
-//   //   display: flex;
-//   //   flex-wrap: wrap;
-//   // }
-//   .footer-social-list-item {
-//     justify-content: start;
-//     flex-direction: row;
-//   }
-//   .container-footer {
-//     justify-content: start;
-//   }
-//   .social-icon {
-//     margin-left: 70px;
-//   }
-//   .join {
-//     justify-content: start;
-//   }
-//   .footer-social-list {
-//     justify-content: start;
-//   }
-//   .footer-social-list {
-//     margin-bottom: 0%;
-//   }
-//   .footer-social-list-svg {
-//     justify-content: space-between;
-//   }
-//   .footer {
-//     justify-content: start;
-//     flex-direction: row;
-//   }
-//   .logo-footer {
-//     justify-content: start;
-//   }
-//   .accent-footer {
-//     justify-content: start;
-//   }
-//   .city {
-//     display: block;
-//   }
-//   .citi-mail {
-//     display: block;
-//   }
-//   .citi-tel {
-//     margin-bottom: 0;
-//     justify-content: start;
-//   }
-//   .footer-form {
-//     justify-content: start;
-//     margin-left: 50px;
-//     // width: 450px;
-//     // height: 86px;
-//   }
 
-//   .footer-form-mail {
-//     width: 450px;
-//     margin-bottom: 0;
-//     margin-right: 12px;
-//   }
-//   .footer-form-svg {
-//     left: 0%;
-//     bottom: 0%;
-//   }
-//   .footer-form-input {
-//     flex-direction: column;
-//   }
-//   .footer-subscribe {
-//     width: 450px;
-//     justify-content: stretch;
-//   }
-//   .footer-form-title {
-//     justify-content: start;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .footer-social-list-item {
-//     justify-content: start;
-//     flex-direction: row;
-//   }
-//   .container-footer {
-//     justify-content: start;
-//   }
-//   .social-icon {
-//     margin-left: 70px;
-//   }
-//   .join {
-//     justify-content: start;
-//   }
-//   .footer-social-list {
-//     justify-content: start;
-//   }
-//   .footer-social-list {
-//     margin-bottom: 0%;
-//   }
-//   .footer-social-list-svg {
-//     justify-content: space-between;
-//   }
-//   .footer {
-//     justify-content: start;
-//     flex-direction: row;
-//   }
-//   .logo-footer {
-//     justify-content: start;
-//   }
-//   .accent-footer {
-//     justify-content: start;
-//   }
-//   .city {
-//     display: block;
-//   }
-//   .citi-mail {
-//     display: block;
-//   }
-//   .citi-tel {
-//     margin-bottom: 0;
-//     justify-content: start;
-//   }
-//   .footer-form {
-//     justify-content: start;
-//     margin-left: 50px;
-//     width: 570px;
-//     height: 86px;
-//   }
-
-//   .footer-form-mail {
-//     width: 358px;
-//     margin-bottom: 0;
-//     margin-right: 12px;
-//   }
-//   .footer-form-svg {
-//     left: 89%;
-//     bottom: 15%;
-//   }
-//   .footer-form-input {
-//     flex-direction: row;
-//   }
-//   .footer-subscribe {
-//     width: 570px;
-//     justify-content: stretch;
-//   }
-//   .footer-form-title {
-//     justify-content: start;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .container-footer,
+  .social-icon,
+  .footer-subscribe {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-form-mail {
+    margin: 0 auto 20px;
+    width: 450px;
+  }
+  .container .footer {
+    flex-direction: row;
+    display: flex;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+  }
+}

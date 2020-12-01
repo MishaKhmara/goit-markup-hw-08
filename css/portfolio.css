@@ -85,6 +85,12 @@ ul {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .button-header {
+    display: none;
+  }
+}
+
 .button-header .icon-cross {
   display: none;
 }
@@ -97,18 +103,79 @@ ul {
   display: none;
 }
 
-.menu-nav-container {
-  display: none;
-  position: absolute;
-  width: 100%;
-  min-height: 400px;
-  left: 0px;
-  top: 100%;
-  background: #ffffff;
+.icon-cross {
+  border: none;
 }
 
-.menu-nav-container.is-open {
+.icon-cross:hover,
+.icon-cross:focus {
+  fill: #2196f3;
+}
+
+.icon-menu {
+  border: none;
+}
+
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav-container {
+    padding: 60px 0;
+    background: #ffffff;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+    left: 0px;
+    top: 100%;
+    z-index: 5;
+  }
+  .menu-nav-container .site-nav {
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menu-nav-container .site-nav .item {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .menu-nav-container .site-nav .list {
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .menu-nav-container .link-address {
+    font-size: 18px;
+    line-height: 1.666;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .menu-nav-container .site-nav .item + .item {
+    margin-left: 0%;
+  }
+  .menu-nav-container .site-nav .current::after {
+    width: 100%;
+    height: 4px;
+    bottom: -50%;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+  .menu-nav-container .site-nav .link {
+    margin: 0 auto;
+  }
+}
+
+.menu-nav-container .menu-nav-container.is-open {
   display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-nav-container {
+    display: flex;
+  }
 }
 
 .list-contacts {
@@ -139,6 +206,7 @@ ul {
 }
 
 .page-header {
+  align-items: center;
   position: relative;
   display: flex;
   justify-content: center;
@@ -150,6 +218,7 @@ ul {
 }
 
 .logo {
+  text-align: center;
   margin-left: 15px;
   color: var(--logo-site-nav-color);
   font-family: Raleway;
@@ -173,12 +242,12 @@ ul {
 }
 
 .site-nav {
-  display: none;
+  display: flex;
   margin-left: 93px;
 }
 
 .main-nav {
-  display: none;
+  display: flex;
   align-items: center;
 }
 
@@ -218,8 +287,6 @@ ul {
 }
 
 .second-nav {
-  display: none;
-  display: none;
   display: flex;
   margin-left: auto;
 }

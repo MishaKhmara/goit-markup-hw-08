@@ -2,7 +2,12 @@
   display: inline-flex;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
 .button-header .icon-cross {
   display: none;
 }
@@ -13,21 +18,79 @@
 .button-header.is-open .icon-menu {
   display: none;
 }
+.icon-cross {
+  border: none;
+  // fill: #212121;
+}
+.icon-cross:hover,
+.icon-cross:focus {
+  fill: #2196f3;
+}
+.icon-menu {
+  border: none;
+  // fill: #212121;
+}
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: #2196f3;
+}
 
 .menu-nav-container {
-  display: none;
-  position: absolute;
-  width: 100%;
-  min-height: 400px;
-  left: 0px;
-  top: 100%;
+  @media screen and (max-width: 767px) {
+    padding: 60px 0;
+    background: #ffffff;
+    justify-content: center;
+    display: none;
+    position: absolute;
+    width: 100%;
+    min-height: 400px;
+    left: 0px;
+    top: 100%;
+    z-index: 5;
+    .site-nav {
+      margin: 0 auto;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .site-nav .item {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+    .site-nav .list {
+      margin: 0 auto;
+      justify-content: center;
+    }
+    .link-address {
+      font-size: 18px;
+      line-height: 1.666;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    .site-nav .item + .item {
+      margin-left: 0%;
+    }
+    .site-nav .current::after {
+      width: 100%;
+      height: 4px;
+      bottom: -50%;
 
-  background: #ffffff;
-  // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-  //   0px 1px 3px rgba(0, 0, 0, 0.16);
+      background: #2196f3;
+      border-radius: 2px;
+    }
+    .site-nav .link {
+      margin: 0 auto;
+    }
+  }
+
+  .menu-nav-container.is-open {
+    display: block;
+  }
 }
-.menu-nav-container.is-open {
-  display: block;
+
+@media screen and (min-width: 767px) {
+  .menu-nav-container {
+    display: flex;
+  }
 }
 .list-contacts {
   display: flex;
@@ -56,6 +119,7 @@
 }
 
 .page-header {
+  align-items: center;
   position: relative;
   display: flex;
   justify-content: center;
@@ -66,6 +130,7 @@
   border: 1px solid #ececec;
 }
 .logo {
+  text-align: center;
   margin-left: 15px;
   color: var(--logo-site-nav-color);
   font-family: Raleway;
@@ -86,14 +151,12 @@
 }
 
 .site-nav {
-  display: none;
-  // display: flex;
+  display: flex;
 
   margin-left: 93px;
 }
 .main-nav {
-  display: none;
-  // display: flex;
+  display: flex;
   align-items: center;
 }
 .site-nav .item + .item {
@@ -130,8 +193,6 @@
 }
 
 .second-nav {
-  display: none;
-  display: none;
   display: flex;
   margin-left: auto;
 }
@@ -159,4 +220,6 @@
 }
 .site-nav .list {
   display: none;
+}
+@media screen and (max-width: 1199px) {
 }

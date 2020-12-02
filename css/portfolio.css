@@ -354,18 +354,8 @@ ul {
   margin-right: 10px;
 }
 
-.social-icon {
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-}
-
 .join {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.142;
@@ -378,7 +368,6 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 0px;
-  margin-bottom: 60px;
   padding-left: 0px;
   list-style: none;
   content: "";
@@ -414,6 +403,7 @@ ul {
 }
 
 .mein-footer {
+  background: #2f303a;
   display: flex;
   justify-content: center;
 }
@@ -431,8 +421,6 @@ ul {
 }
 
 .logo-footer {
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
   color: var(--logo-site-nav-color);
   font-family: Raleway;
@@ -482,7 +470,6 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 0px;
-  margin-bottom: 60px;
   padding: 0px;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -496,15 +483,7 @@ ul {
   color: var(--logo-site-nav-color);
 }
 
-.footer-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .footer-form-title {
-  display: flex;
-  justify-content: center;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
@@ -556,12 +535,6 @@ ul {
   border-radius: 4px;
 }
 
-.footer-form-input {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .footer-form-mail::placeholder {
   width: 47px;
   height: 20px;
@@ -572,14 +545,86 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-form-title {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-social-list {
+    margin-bottom: 60px;
+  }
+  .social-icon {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  .join {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .citi-tel {
+    margin-bottom: 60px;
+  }
+  .footer-form-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-form-title {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-subscribe {
+    padding-top: 60px;
+  }
+  .social-icon {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  .join {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-form-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .footer {
     padding: 40px 50px;
   }
   .container-footer {
+    padding-top: 50px;
     float: left;
   }
   .social-icon {
+    padding-top: 55px;
     float: right;
   }
   .footer-subscribe {
@@ -592,28 +637,43 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+  .footer-form-title {
+    margin-bottom: 20px;
+  }
   .footer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .container-footer,
-  .social-icon,
-  .footer-subscribe {
-    clear: both;
+  .mein-footer {
+    align-items: center;
+  }
+  .footer-address {
     display: flex;
+    justify-content: start;
     flex-direction: column;
+    align-items: flex-start;
   }
   .footer-form-mail {
-    margin: 0 auto 20px;
-    width: 450px;
+    margin-bottom: 0%;
+    display: flex;
+    margin-right: 12px;
+    width: 358px;
   }
-  .container .footer {
-    flex-direction: row;
+  .footer-form-input {
     display: flex;
   }
-  .footer-form {
-    display: flex;
-    flex-direction: row;
+  .city {
+    margin-top: 20px;
+  }
+  .footer-form-input {
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 

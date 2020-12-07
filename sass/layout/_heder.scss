@@ -2,6 +2,7 @@
   display: inline-flex;
   border: none;
   background-color: transparent;
+  margin-right: 10px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -92,26 +93,27 @@
   }
 }
 @media screen and (min-width: 768px) and(max-width: 1999px) {
+  .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .site-nav .link {
     margin: 0;
   }
   .link-address {
+    font-size: 12px;
+    line-height: 1.166;
     margin-right: 0;
     margin-bottom: 10px;
   }
   .second-nav {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
   .site-nav .list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
   }
   .list-contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
   }
 }
 
@@ -132,9 +134,9 @@
   width: 16px;
   height: 16px;
 }
-.site-nav .list-contacts + .list-contacts {
-  margin-left: 50px;
-}
+// .site-nav .list-contacts + .list-contacts {
+//   margin-left: 50px;
+// }
 .link-address:hover .nav-decoration-list-svg,
 .nav-decoration-list-svg:focus {
   fill: var(--logo-site-nav-color);

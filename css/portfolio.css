@@ -83,6 +83,7 @@ ul {
   display: inline-flex;
   border: none;
   background-color: transparent;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,26 +180,27 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1999px) {
+  .page-header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .site-nav .link {
     margin: 0;
   }
   .link-address {
+    font-size: 12px;
+    line-height: 1.166;
     margin-right: 0;
     margin-bottom: 10px;
   }
   .second-nav {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
   .site-nav .list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
   }
   .list-contacts {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
   }
 }
 
@@ -217,10 +219,6 @@ ul {
   margin-right: 10px;
   width: 16px;
   height: 16px;
-}
-
-.site-nav .list-contacts + .list-contacts {
-  margin-left: 50px;
 }
 
 .link-address:hover .nav-decoration-list-svg,
@@ -809,6 +807,12 @@ ul {
   width: 100%;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .button-portfolio {
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .button-portfolio-list {
     display: flex;
@@ -843,8 +847,12 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .portfolio-item {
+    max-width: 370px;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+  .picture-portfolio {
+    max-width: 370px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
